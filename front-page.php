@@ -9,7 +9,7 @@ get_header();
     <div class="main-wrap">
 
           <div class="first-wrap">
-          <button>All Monsey Homes</button>
+          <a href="<?php echo get_category_link(3) ?>"><?php echo get_cat_name(3); ?></a>
 
             <?php get_template_part('template-parts/card-wrap'); ?>
           </div>

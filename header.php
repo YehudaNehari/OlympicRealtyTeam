@@ -9,10 +9,11 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<header>
 	<div class="header" id="myHeader">
 		<div class="main-header">
 			<div class="logo-img">
-				<img src="http://127.0.0.1/wp-content/uploads/2022/11/logo-removebg-preview.png" alt="Logo Image" />
+				<a href="<?php echo get_bloginfo('url'); ?>" ><img src="http://127.0.0.1/wp-content/uploads/2022/11/logo-removebg-preview.png" alt="Logo Image" /></a>
 			</div>
 			<div class="header-title">
 				<h1>Olympic Realty Team</h1>
@@ -23,3 +24,4 @@
 			</nav>
 		</div>
 	</div>
+</header>

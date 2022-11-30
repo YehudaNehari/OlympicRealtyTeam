@@ -21,3 +21,19 @@ jQuery(document).ready(function () {
     }
   }
 });
+
+jQuery(document).ready(function ($) {
+  // Initialize simple slick slider
+  $(".card-img").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 500,
+    fade: true,
+    cssEase: "linear",
+  });
+
+  $(".img-slider").on("mouseover", function () {
+    $(this).addClass("hovered");
+  });
+});
