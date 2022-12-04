@@ -11,263 +11,49 @@ Author URI: https://yehudaneahri.com
 html,
 body {
   border: none;
-  margin: 0 !important  ;
+  margin: 0 !important;
   padding: 0;
+  transition: 1000ms;
 }
 
-h3 {
-  margin: 0;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .main-page {
-  padding-top: 102px;
-}
-.header {
-  background: #ffff;
-  height: 100px;
-  color: rgb(0, 0, 0);
-  margin-bottom: 40px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
-  z-index: 100;
-}
-
-.logo-img img {
-  height: 100px;
-}
-.menu {
-  display: flex;
-  width: 550px;
-  justify-content: space-between;
-}
-.main-nav ul ul {
-  display: none;
-}
-.main-nav ul li:hover > ul {
-  display: block;
-}
-.main-nav ul ul {
-  display: none;
-  position: absolute;
-  top: 2.6em;
-  left: -37px;
-  width: min-content;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
-}
-.main-nav li {
-  position: relative;
-  background: #54b5c3;
-  padding: 12px 30px 12px 30px;
-  margin-bottom: 1px;
-  font-size: 18px;
-  list-style: none;
-}
-.main-nav li a {
-  text-decoration: none;
-  color: white;
-}
-.toggle-nav {
-  display: none !important;
-}
-
-div.custom-menu-class a {
-  color: #000;
-}
-.main-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
-  margin: auto;
-}
-
-.footer {
-  background: #ffff;
-  height: 120px;
-  color: rgb(0, 0, 0);
-  border-radius: 12px;
-  margin: 40px 10px 10px 10px;
-}
-
-.sec {
-  height: 500px;
-  background: #ffff;
-  margin: 10px;
-  border-radius: 12px;
-  width: 50%;
-}
-
-.card-wrap {
-  display: flex;
-}
-
-.main-wrap {
-  display: flex;
-  flex-direction: row-reverse;
-  background: #fff;
-  border-radius: 10px;
-  height: 450px;
-  box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-.card {
-  height: 350px;
-  background: #ffff;
-  border-radius: 12px;
-  padding: 10px;
-  width: 28%;
-  margin: auto;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
-    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-}
-.card a {
-  text-decoration: none;
-}
-.card-wrap {
-  width: 100%;
-  margin: auto;
-}
-.info-wrap {
-  width: 20%;
-  margin: auto;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.card-img img {
-  width: 100%;
-  height: 250px;
-  border-radius: 10px;
-}
-
-.card-title p {
-  font-size: 30px;
-  font-weight: bold;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
 }
-.card-text {
-  height: 28%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  color: #000;
+
+p {
+  margin: 0;
 }
 
-.main-sec {
-  margin: 10px 10px 40px 10px;
+.main-btn {
+  padding: 10px 40px 10px 40px;
+  margin-right: 20px;
+  font-size: 18px;
+  list-style: none;
+  border: 2px solid white;
 }
 
-.sec-wrap {
-  flex-direction: row;
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
 }
 
-.first-wrap {
-  border-radius: 10px;
-  width: 75%;
-  margin: auto;
-  margin-bottom: 2px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.sec-left {
-  margin-left: 49%;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-.title {
-  letter-spacing: 1px;
-  font-size: 30px;
-  text-align: center;
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #b02b26;
 }
 
-.wiki {
-  padding: 0 15px 15px 15px;
-  letter-spacing: 0.5px;
-}
-
-/* Slick   */
-
-.slick-prev:before,
-.slick-next:before {
-  color: #000 !important;
-}
-
-/*.card:hover .card-img {
-  border: 10px solid #00000040;
-}*/
-
-/* */
-
-/* single home */
-
-.main-home-st {
-  background: aqua;
-  height: 100px;
-  width: 50%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.home-st {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  height: 100%;
-}
-
-/**/
-
-@media screen and (max-width: 550px) {
-  a.toggle-nav {
-    float: right;
-    margin: 0 0 0.5em 0.5em;
-    display: inline-block !important;
-    color: #fff;
-    transition: color linear 0.15s;
-  }
-
-  a.toggle-nav:hover,
-  a.toggle-nav:active {
-    text-decoration: none;
-    color: #fff;
-  }
-
-  .menu-header {
-    display: inline-block;
-    position: relative;
-    margin: 0;
-    width: 100%;
-  }
-
-  #access .menu-header ul {
-    display: none;
-    position: absolute;
-    top: 80%;
-    right: 0px;
-    min-width: 200px;
-    background-color: #7b3d84;
-    font-size: 1.2em;
-  }
-
-  #access .menu-header li {
-    display: block;
-    float: none;
-    padding-right: 2%;
-    text-align: right;
-  }
-  #access ul li:hover > ul {
-    display: none;
-  }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

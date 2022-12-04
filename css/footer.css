@@ -1,0 +1,43 @@
+.footer {
+  height: 300px;
+  color: rgb(0, 0, 0);
+  margin-top: 40px;
+  z-index: 100;
+  background: black;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+.footer h3 {
+  color: #ffffff;
+}
+
+.footer .menu {
+  display: block;
+  padding: 0;
+  margin: 10px auto;
+}
+
+.footer-nav li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-nav li {
+  padding: 12px 30px 12px 30px;
+  list-style: none;
+  text-align: center;
+  margin-bottom: 5px;
+  border: 2px solid #ffffff;
+}
+
+.footer .footer-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.footer .wrap-sec {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  text-align: center;
+}

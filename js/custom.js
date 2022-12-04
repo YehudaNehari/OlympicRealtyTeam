@@ -1,27 +1,3 @@
-console.log("inn");
-jQuery(document).ready(function () {
-  jQuery(".toggle-nav").click(function (e) {
-    jQuery(".menu-header ul.menu").slideToggle(500);
-
-    e.preventDefault();
-  });
-
-  window.onscroll = function () {
-    myFunction();
-  };
-
-  var header = document.getElementById("myHeader");
-  var sticky = header.offsetTop;
-
-  function myFunction() {
-    if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
-    } else {
-      header.classList.remove("sticky");
-    }
-  }
-});
-
 jQuery(document).ready(function ($) {
   // Initialize simple slick slider
   $(".card-img").slick({
@@ -29,6 +5,27 @@ jQuery(document).ready(function ($) {
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 500,
+    fade: true,
+    cssEase: "linear",
+  });
+
+  $(".hs-image").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: true,
+    cssEase: "linear",
+  });
+
+  $(".wrap-text").slick({
+    arrows: false,
+    draggable: false,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
     fade: true,
     cssEase: "linear",
   });
